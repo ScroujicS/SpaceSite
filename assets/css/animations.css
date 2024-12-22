@@ -1,0 +1,40 @@
+/* Анимации для блоков */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Анимация для текста */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.bounce {
+    animation: bounce 0.5s ease-in-out;
+}
+
+/* Анимация для кнопки */
+@keyframes scaleUp {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+button:hover {
+    animation: scaleUp 0.2s forwards;
+}
+
+/* Анимация для скрытия */
+@keyframes slideOut {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+.slide-out {
+    animation: slideOut 0.5s ease-out;
+}
